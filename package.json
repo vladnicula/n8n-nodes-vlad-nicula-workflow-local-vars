@@ -1,7 +1,7 @@
 {
   "name": "n8n-nodes-vlad-nicula-workflow-local-vars",
   "version": "0.1.0",
-  "description": "",
+  "description": "Expeirmenting with Local Variables in workflows",
   "keywords": [
     "n8n-community-node-package"
   ],
