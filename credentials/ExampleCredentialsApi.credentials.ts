@@ -3,7 +3,7 @@ import {
 	ICredentialTestRequest,
 	ICredentialType,
 	INodeProperties,
-} from 'n8n-workflow';
+} from 'n8n-workflow'
 
 export class ExampleCredentialsApi implements ICredentialType {
 	name = 'exampleCredentialsApi';
