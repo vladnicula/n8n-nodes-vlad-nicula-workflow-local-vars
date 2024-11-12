@@ -1,6 +1,6 @@
 {
   "name": "n8n-nodes-vlad-nicula-workflow-local-vars",
-  "version": "0.1.1",
+  "version": "0.1.13",
   "description": "Expeirmenting with Local Variables in workflows",
   "keywords": [
     "n8n-community-node-package"
@@ -34,12 +34,13 @@
     "dist"
   ],
   "n8n": {
-    "n8nNodesApiVersion": 1.1,
+    "n8nNodesApiVersion": 1.2,
     "credentials": [
     ],
     "nodes": [
       "dist/nodes/LocalVarsClearNode/LocalVarsClearNode.node.js",
-      "dist/nodes/WorkflowVariablesNode/WorkflowVariablesNode.node.js"
+      "dist/nodes/WorkflowVariablesNode/WorkflowVariablesNode.node.js",
+      "dist/nodes/TemplateStringNode/TemplateStringNode.node.js"
     ]
   },
   "devDependencies": {
