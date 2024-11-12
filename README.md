@@ -2,7 +2,7 @@
 
 # n8n-nodes-vlad-nicula-workflow-local-vars
 
-`1.4`
+`0.1.6`
 
 Don't use this. I'm figuring things out. 
 

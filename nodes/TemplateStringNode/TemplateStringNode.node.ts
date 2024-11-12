@@ -10,7 +10,7 @@ export class TemplateStringNode implements INodeType {
 		displayName: 'Template String Node',
 		name: 'templateStringNode',
 		group: ['transform'],
-		version: 3,
+		version: 4,
 		description: 'Allows you to manipulate a multi line text message for usage in later nodes.',
 		defaults: {
 			name: 'Template String Node',
@@ -27,7 +27,13 @@ export class TemplateStringNode implements INodeType {
 				typeOptions: {
 					rows: 16,
 				}
-			}
+			},
+			{
+				displayName: 'Content (JSON)',
+				name: 'content',
+				type: 'json',
+				default: '',
+			},
 		],
 	};
 

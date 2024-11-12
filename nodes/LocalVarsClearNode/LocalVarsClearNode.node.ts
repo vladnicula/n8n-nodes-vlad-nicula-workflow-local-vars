@@ -11,7 +11,7 @@ export class LocalVarsClearNode implements INodeType {
 		displayName: 'Local Vars Clear Node',
 		name: 'localVarsClearNode',
 		group: ['transform'],
-		version: 3,
+		version: 4,
 		description: 'Basic Local Vars Clear Node',
 		defaults: {
 			name: 'Local Vars Clear Node',

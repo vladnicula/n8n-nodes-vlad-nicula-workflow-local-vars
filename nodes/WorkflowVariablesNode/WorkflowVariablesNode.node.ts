@@ -13,7 +13,7 @@ export class WorkflowVariablesNode implements INodeType {
 		displayName: 'Workflow Variables Node',
 		name: 'workflowVariablesNode',
 		group: ['transform'],
-		version: 3,
+		version: 4,
 		description: 'Access Workflow Instance Variables',
 		defaults: {
 			name: 'Workflow Variables',
@@ -43,6 +43,16 @@ export class WorkflowVariablesNode implements INodeType {
 				name: 'content',
 				type: 'json',
 				default: '',
+			},
+			{
+				displayName: 'Content',
+				name: 'content',
+				type: 'string',
+				default: 'multi line text here',
+				required: true,
+				typeOptions: {
+					rows: 16,
+				}
 			}
 		],
 	};
