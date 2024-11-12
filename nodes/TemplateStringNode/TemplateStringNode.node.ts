@@ -10,23 +10,34 @@ export class TemplateStringNode implements INodeType {
 		displayName: 'Template String Node',
 		name: 'templateStringNode',
 		group: ['transform'],
-		version: 2,
+		version: 3,
 		description: 'Allows you to manipulate a multi line text message for usage in later nodes.',
 		defaults: {
 			name: 'Template String Node',
 		},
 		inputs: ['main'],
 		outputs: ['main'],
-		properties: [],
+		properties: [
+			{
+				displayName: 'Content',
+				name: 'content',
+				type: 'string',
+				default: 'multi line text here',
+				required: true,
+				typeOptions: {
+					rows: 16,
+				}
+			}
+		],
 	};
 
 	async execute(this: IExecuteFunctions): Promise<INodeExecutionData[][]> {
 		const items = this.getInputData();
 
-		const itemsWithDescription = items.map((item) => {
-			return { json: { description: item.json.description } }
+		const itemsContent = items.map((item) => {
+			return { json: { content: item.json.content } }
 		})
 
-		return [itemsWithDescription]
+		return [itemsContent]
 	}
 }
